@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const sendSms = async (source, destination, message, apiOptions) => {
+export const sendSms = async (source, destination, message, apiOptions) => {
   const response = await axios.post(
     `${apiOptions.teliUrl}/sms/send?token=${
       apiOptions.apiToken
@@ -9,5 +9,3 @@ const sendSms = async (source, destination, message, apiOptions) => {
 
   return response;
 };
-
-export { sendSms };
