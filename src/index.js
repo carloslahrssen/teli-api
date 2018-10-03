@@ -8,4 +8,4 @@ const sendSms = async (source, destination, message, apiOptions) => {
   return response;
 };
 
-export { sendSms };
+export default { sendSms };
